@@ -6,11 +6,16 @@ $grey: #EDEDED
 $text: #292929
 
 
-$font-suisse-reg: SuisseIntl-Regular, sans-serif
+$font-suisse-reg: SuisseIntl-Regular, sans-serif // 400 use
 $font-suisse-bold: SuisseIntl-Bold, sans-serif
 $font-suisse-med: SuisseIntl-Medium, sans-serif
 $font-suisse-semb: SuisseIntl-SemiBold, sans-serif
 $font-rubik: Rubik, sans-serif
+
+$font-pop-reg: Poppins-reg, sans-serif //400
+$font-pop-med: Poppins-med, sans-serif //500
+$font-pop-semb: Poppins-semb, sans-serif //600
+$font-pop-bold: Poppins-bold, sans-serif //700
 
 body
   -webkit-tap-highlight-color: rgba(0,0,0,0)
@@ -32,7 +37,7 @@ body
   margin: auto
 
 .btn
-  font-family: $font-suisse-semb
+  font-family: $font-pop-semb
   font-size: 18px
   color: $blue
   text-transform: uppercase
@@ -179,7 +184,7 @@ body
       left: 0
       right: 0
     &-title
-      font-family: $font-suisse-semb
+      font-family: $font-pop-bold
       font-size: 22px
       line-height: 22px
       color: $grey
@@ -188,13 +193,13 @@ body
       text-align: center
       margin: 27px 0 20px
     &-sum
-      font-family: $font-rubik
+      font-family: $font-pop-bold
       line-height: 70px
       color: $magenta
       text-transform: uppercase
       letter-spacing: 0.01em
     &-try
-      font-family: $font-suisse-med
+      font-family: $font-pop-semb
       font-size: 18px
       line-height: 24px
       color: $grey
@@ -284,19 +289,21 @@ body
       &::-webkit-scrollbar-thumb
         background: $green
       &-title
-        font-family: $font-suisse-semb
+        font-family: $font-pop-semb
         font-size: 40px
         line-height: 44px
         color: $grey
         text-transform: uppercase
         letter-spacing: 0.03em
+        max-width: 547px
         span
           color: $magenta
       &-list
         margin-top: 25px
         counter-reset: item
+        max-width: 600px
       &-item
-        font-family: $font-suisse-med
+        font-family: $font-pop-med
         font-size: 18px
         line-height: 28px
         color: $grey
@@ -308,13 +315,13 @@ body
         &:before
           content: "" counter(item) "."
           counter-increment: item
-          font-family: $font-suisse-med
+          font-family: $font-pop-bold
           font-size: 18px
           line-height: 28px
           color: $magenta
           margin-right: 5px
       &-info
-        font-family: $font-suisse-bold
+        font-family: $font-pop-bold
         color: $magenta
         margin-top: 30px
         font-size: 24px
@@ -399,7 +406,7 @@ body
     &-info
       max-width: 288px
     &-title
-      font-family: $font-suisse-semb
+      font-family: $font-pop-semb
       font-size: 40px
       line-height: 44px
       letter-spacing: 0.03em
@@ -425,7 +432,7 @@ body
           line-height: 21px
       &_title
         display: block
-        font-family: $font-suisse-reg
+        font-family: $font-pop-reg
         font-size: 16px
         line-height: 20px
         color: $grey
@@ -550,7 +557,7 @@ body
       align-items: flex-start
       margin: 0 0 15px 0
       &_text
-        font-family: $font-suisse-reg
+        font-family: $font-pop-reg
         font-size: 16px
         line-height: 20px
         color: $grey
@@ -600,7 +607,7 @@ body
         &:checked + .bonus__reg-old_label::before
           opacity: 1
     &-sign
-      font-family: $font-suisse-semb
+      font-family: $font-pop-semb
       color: $blue
       padding: 23px 20px 22px
       width: 100%
@@ -620,7 +627,7 @@ body
       &:hover
         background: $green-hover
     &-already
-      font-family: $font-suisse-reg
+      font-family: $font-pop-reg
       color: $grey
       text-align: center
       font-size: 16px
@@ -631,7 +638,7 @@ body
       justify-content: center
     &-sign_link
       display: inline-block
-      font-family: $font-suisse-reg
+      font-family: $font-pop-reg
       color: $magenta
       font-size: 16px
       line-height: 28px
@@ -644,20 +651,22 @@ body
     &_info
       max-width: 560px
     &_title
-      font-family: $font-suisse-semb
+      font-family: $font-pop-semb
       letter-spacing: 0.03em
       text-transform: uppercase
       font-size: 40px
       line-height: 44px
       color: $grey
-      text-align: center
+      text-align: start
       margin: 0 0 20px 0
     &_try
-      font-family: $font-suisse-reg
+      font-family: $font-pop-reg
       font-size: 16px
       line-height: 24px
       color: $grey
       margin: 0 0 30px 0
+      max-width: 465px
+      justify-self: flex-start
     &_form
       display: flex
       align-items: center
@@ -681,7 +690,7 @@ body
       &:focus
         border: 1px solid #FF267E
     &_text
-      font-family: $font-suisse-reg
+      font-family: $font-pop-reg
       color: $grey
       font-size: 16px
       line-height: 28px
@@ -701,7 +710,7 @@ body
       img
         max-width: 158px
     &_title
-      font-family: $font-suisse-semb
+      font-family: $font-pop-semb
       color: $grey
       font-size: 40px
       line-height: 44px
@@ -713,7 +722,7 @@ body
       width: 288px
       margin: 0 auto
     &_link
-      font-family: $font-suisse-semb
+      font-family: $font-pop-semb
       display: inline-block
       padding: 23px 20px 21px
       text-align: center
@@ -741,7 +750,7 @@ body
       top: 10px
       right: 10px
       text-align: right
-      font-family: $font-suisse-med
+      font-family: $font-pop-med
       letter-spacing: 0.01em
       z-index: 3
       display: none
@@ -784,11 +793,11 @@ body
       position: absolute
       top: -21px
       right: -32px
-      font-family: $font-suisse-med
+      font-family: $font-pop-med
       color: $grey
       font-size: 19px
       line-height: 28px
-      padding: 72px 73px 0
+      padding: 72px 77px 0
       letter-spacing: 0.03em
       z-index: 3
       @media screen and (min-width: 551px) and (min-height: 500px)
@@ -798,7 +807,7 @@ body
       z-index: 2
       transform: translateX(-17px)
     &-txt
-      font-family: $font-suisse-bold
+      font-family: $font-pop-bold
       font-size: 90px
       line-height: 98px
       color: $grey
@@ -808,13 +817,14 @@ body
       position: absolute
       bottom: 202px
       left: -426px
+      z-index: 2
       span
         color: $magenta
       br
         &:first-of-type
           display: block
         &:last-of-type
-          display: none
+          display: block
     &-wheel
       width: 857px
       height: 910px
@@ -932,7 +942,7 @@ body
     display: flex
     justify-content: flex-start
     &-rules
-      font-family: $font-suisse-semb
+      font-family: $font-pop-semb
       font-size: 20px
       color: $grey
       text-transform: uppercase

@@ -50,15 +50,15 @@
       .bonus__reg-close
       .bonus__reg-wrapper.bonus__reg-wrapper_mob
       .bonus__reg-info
-        .bonus__reg-title Registration
+        .bonus__reg-title रजिस्‍ट्रेशन
         form(action='#' class="bonus__reg-form")
-          label.bonus__reg-form_title Your mobile number
+          label.bonus__reg-form_title आपका मोबाइल नंबर
           .bonus__reg-tel
             .bonus__reg-tel_info
               img(src='img/reg/india.jpg' alt="india")
               span +91
             input(type='tel' id="tel" name="tel" class="input-tel" data-phone-pattern = "(____)___-___" placeholder="(____)___-___" pattern="\(\d{3}\) \d{3}\-\d{3}")
-          label.bonus__reg-form_title Your password
+          label.bonus__reg-form_title आपका पासवर्ड
           .bonus__reg-pass
             input(type="password" name="password" id="password" class="input-pass" placeholder='Enter the password')
             button(type="button" aria-label="pass-show" class="bonus__reg-pass_show")
@@ -68,29 +68,29 @@
             .bonus__reg-activate
               input(type="checkbox" id="activate" name='activate' class="bonus__reg-activate_check")
               label(for="activate" class='bonus__reg-activate_label')
-              .bonus__reg-activate_text Activate deposit bonus. <span class="bonus__reg-activate_link ">(How to receive bonus)</span>
+              .bonus__reg-activate_text जमा बोनस सक्रिय करें। #[br] <span class="bonus__reg-activate_link ">(बोनस कैसे प्राप्‍त करें)</span>
             .bonus__reg-old
               input(type="checkbox" id="old" name='old' class="bonus__reg-old_check")
               label(for="old" class='bonus__reg-old_label')
-              .bonus__reg-old_text I am 18 years old and I agree with <a href="#" class="bonus__reg-old_link">Terms and conditions</a>
+              .bonus__reg-old_text मेरी उम्र 18 वर्ष है और मैं #[br] <a href="#" class="bonus__reg-old_link">नियमों एवं शर्तों </a> से सहमत हूं
 
-          button(type="button" class='bonus__reg-sign') SIGN UP
-          .bonus__reg-already Already have an account?
+          button(type="button" class='bonus__reg-sign') से सहमत हूं
+          .bonus__reg-already अकाउंट पहले से हैं?
           .bonus__reg-wrap_link
-            a(href="#" class="bonus__reg-sign_link") Sign in
+            a(href="#" class="bonus__reg-sign_link") साइन इन
     .bonus__reg.bonus__reg-step2.hide
       .bonus__reg-close.bonus__reg-step2-close
       .bonus__reg-wrapper.bonus__reg-step2-wrapper
       .bonus__reg-step2_info
-        .bonus__reg-step2_title enter verification code
-        .bonus__reg-step2_try We have sent a temporary verification code to a phone number ending in 74. Enter the code to continue.
+        .bonus__reg-step2_title सत्‍यापन कोड दर्ज करें
+        .bonus__reg-step2_try हमने आपके फोन नंबर पर, जिसके अंतिम अंक (_) हैं, एक अस्‍थायी सत्‍यापन कोड भेजा है।
         form(action='#').bonus__reg-step2_form
           input(type='tel' maxlength="1" pattern="[0-9]").bonus__reg-step2_number
           input(type='tel' maxlength="1" pattern="[0-9]").bonus__reg-step2_number
           input(type='tel' maxlength="1" pattern="[0-9]").bonus__reg-step2_number
           input(type='tel' maxlength="1" pattern="[0-9]").bonus__reg-step2_number
           input(type='tel' maxlength="1" pattern="[0-9]").bonus__reg-step2_number
-        .bonus__reg-step2_text Didn't receive a code? <a href="#">Try again!</a>
+        .bonus__reg-step2_text कोड नहीं मिला? <a href="#">दोबारा प्रयास करें।</a>
         .show-last-popup show next
     .bonus__reg.bonus__reg-step3.hide
             .bonus__reg-close.bonus__reg-step3-close
@@ -98,9 +98,9 @@
             .bonus__reg-step3_info
               .bonus__reg-step3_img
                 img(src='img/reg/finaly.png' alt='done')
-              .bonus__reg-step3_title Hooray! #[br] I am registered
+              .bonus__reg-step3_title हुर्रे! #[br] मैं रजिस्‍टर्ड हूं
               .bonus__reg-step3_btn
-                a(href="#").bonus__reg-step3_link Get a bonus!
+                a(href="#").bonus__reg-step3_link बोनस प्राप्‍त करें!
 
   .bonus__main
     .bonus__main-name
@@ -111,7 +111,7 @@
       नमस्कार। मैं दीपिका पादुकोन हूं।#[br]
       क्या आप खेलना चाहते हैं? व्हील स्पिन करें - आपके पास दो मौके हैं। शुभकामनाएं!
     .bonus__main-wrapper
-      .bonus__main-txt spin#[br] and#[br] #[span win] #[span bonuses]
+      .bonus__main-txt स्पिन करें#[br] और बोनस #[br] जीतें
       .bonus__main-wheel
         .bonus__main-wheel-wrap
           .bonus__main-wheel-arrow.position
@@ -130,7 +130,7 @@
     .bonus__main-video
       video(muted loop autoplay).bonus__main-video-bg
     .bonus__footer
-      .bonus__footer-rules How to receive a bonus
+      .bonus__footer-rules बोनस कैसे प्राप्त करें
   .bonus__chip.chip-1
   .bonus__chip.chip-2
   .bonus__chip.chip-3
