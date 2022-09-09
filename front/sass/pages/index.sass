@@ -1,0 +1,1087 @@
+$blue: #000055
+$magenta: #ff267e
+$green: #05C489
+$green-hover: #09B47F
+$grey: #EDEDED
+$text: #292929
+
+
+$font-suisse-reg: SuisseIntl-Regular, sans-serif
+$font-suisse-bold: SuisseIntl-Bold, sans-serif
+$font-suisse-med: SuisseIntl-Medium, sans-serif
+$font-suisse-semb: SuisseIntl-SemiBold, sans-serif
+$font-rubik: Rubik, sans-serif
+
+body
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  overscroll-behavior: none
+  img
+    max-width: 100%
+    height: auto
+
+.container
+  max-width: 700px
+  margin: auto
+
+.position
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+
+.btn
+  font-family: $font-suisse-semb
+  font-size: 18px
+  color: $blue
+  text-transform: uppercase
+  letter-spacing: 0.07em
+  background: linear-gradient(1.54deg, #52B382 0.98%, #67DEA2 98.36%)
+  border-radius: 4px
+  transition: background .3s linear
+  &:hover
+    background: linear-gradient(1.54deg, #67DEA2 0.98%, #52B382 98.36%)
+
+.bonus
+  width: 100%
+  height: 100%
+  overflow: hidden
+  position: relative
+  background: #040414
+  &__overlay
+    background: rgba(18, 12, 41, 0.5)
+    display: flex
+    justify-content: center
+    align-items: center
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 10
+    transition: opacity .7s linear, visibility .5s linear
+    &-firstWoman,
+    &-secondWoman
+      height: 90vh
+      position: absolute
+      bottom: -4px
+      right: 0
+      z-index: 1
+      pointer-events: none
+      img
+        height: 100%
+    &-chip
+      position: absolute
+    .overlayChip-1
+      width: 243px
+      height: 236px
+      bottom: 20px
+      left: 43%
+      @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+        background: url("../img/chip-5.png") no-repeat 0 0/contain
+      @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+        background: url("../img/chip-5.png") no-repeat 0 0/contain
+      @media screen and (max-width: 550px) and (orientation: portrait)
+        background: url("../img/chip-5-mob.png") no-repeat 0 0/contain
+      @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+        background: url("../img/chip-5-mob.png") no-repeat 0 0/contain
+    .overlayChip-2
+      width: 265px
+      height: 219px
+      bottom: 180px
+      left: 16%
+      @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+        background: url("../img/chip-1.png") no-repeat 0 0/contain
+      @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+        background: url("../img/chip-1.png") no-repeat 0 0/contain
+      @media screen and (max-width: 550px) and (orientation: portrait)
+        background: url("../img/chip-1-mob.png") no-repeat 0 0/contain
+      @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+        background: url("../img/chip-1-mob.png") no-repeat 0 0/contain
+    .overlayChip-3
+      width: 190px
+      height: 215px
+      bottom: 220px
+      left: -50px
+      @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+        background: url("../img/chip-2.png") no-repeat 0 0/contain
+      @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+        background: url("../img/chip-2.png") no-repeat 0 0/contain
+    .overlayChip-4
+      width: 190px
+      height: 215px
+      top: 60px
+      left: -50px
+      transform: rotate(85deg)
+      @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+        background: url("../img/chip-2.png") no-repeat 0 0/contain
+      @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+        background: url("../img/chip-2.png") no-repeat 0 0/contain
+    .overlayChip-5
+      width: 420px
+      height: 290px
+      top: 100px
+      left: 20%
+      @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+        background: url("../img/chip-4.png") no-repeat 0 0/contain
+      @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+        background: url("../img/chip-4.png") no-repeat 0 0/contain
+      @media screen and (max-width: 550px) and (orientation: portrait)
+        background: url("../img/chip-4-mob.png") no-repeat 0 0/contain
+      @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+        background: url("../img/chip-4-mob.png") no-repeat 0 0/contain
+    .overlayChip-6
+      width: 190px
+      height: 215px
+      top: -40px
+      left: 47%
+      transform: rotate(85deg)
+      @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+        background: url("../img/chip-2.png") no-repeat 0 0/contain
+      @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+        background: url("../img/chip-2.png") no-repeat 0 0/contain
+    .overlayChip-7
+      width: 256px
+      height: 245px
+      top: 50px
+      right: 50px
+      transform: rotate(105deg)
+      @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+        background: url("../img/chip-3.png") no-repeat 0 0/contain
+      @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+        background: url("../img/chip-3.png") no-repeat 0 0/contain
+      @media screen and (max-width: 550px) and (orientation: portrait)
+        background: url("../img/chip-5-mob.png") no-repeat 0 0/contain
+      @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+        background: url("../img/chip-3-mob.png") no-repeat 0 0/contain
+  &__firstWin,
+  &__secondWin
+    width: 704px
+    height: 550px
+    position: relative
+    @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+      background: url("../img/popup-small.png") no-repeat 0 0/contain
+    @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+      background: url("../img/popup-small.png") no-repeat 0 0/contain
+    @media screen and (max-width: 550px) and (orientation: portrait)
+      background: url("../img/popup-small-mob.png") no-repeat 0 0/contain
+    @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+      background: url("../img/popup-small-mob.png") no-repeat 0 0/contain
+    &-info
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      position: absolute
+      top: 80px
+      bottom: 80px
+      left: 0
+      right: 0
+    &-title
+      font-family: $font-suisse-semb
+      font-size: 22px
+      line-height: 22px
+      color: $grey
+      text-transform: uppercase
+      letter-spacing: 0.05em
+      text-align: center
+      margin: 27px 0 20px
+    &-sum
+      font-family: $font-rubik
+      line-height: 70px
+      color: $magenta
+      text-transform: uppercase
+      letter-spacing: 0.01em
+    &-try
+      font-family: $font-suisse-med
+      font-size: 18px
+      line-height: 24px
+      color: $grey
+      letter-spacing: 0.03em
+      text-align: center
+      .amount
+        span
+          color: $magenta
+    &-btn
+      padding: 22px 95px 20px
+      margin-top: 40px
+      text-align: center
+      cursor: pointer
+  &__firstWin
+    &-sum
+      font-size: 70px
+      display: flex
+      flex-direction: column
+      align-items: center
+      span
+        font-size: 20px
+        line-height: 20px
+        margin-top: 2px
+  &__secondWin
+    &-btn
+      border: none
+      outline: none
+    &-info
+      top: 70px
+      bottom: 68px
+    &-sum
+      font-size: 60px
+      position: relative
+      span
+        color: $grey
+    &-title
+      margin-top: 20px
+    &-try
+      max-width: 40%
+  &__rules
+    width: 830px
+    height: 730px
+    position: relative
+    @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+      background: url("../img/how-bg.png") no-repeat 0 0/contain
+    @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+      background: url("../img/how-bg.png") no-repeat 0 0/contain
+    @media screen and (max-width: 550px) and (orientation: portrait)
+      background: url("../img/how-bg-mob.png") no-repeat 0 0/contain
+    @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+      background: url("../img/popup-small-mob.png") no-repeat 0 0/contain
+    &-close
+      position: absolute
+      top: 55px
+      right: -14px
+      width: 40px
+      height: 40px
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+      &:before,
+      &:after
+        content: ""
+        width: 5px
+        height: 40px
+        background: $green
+        position: absolute
+        top: 0
+        left: 50%
+      &:before
+        transform: rotate(45deg)
+      &:after
+        transform: rotate(-45deg)
+    &-txt
+      position: absolute
+      top: 130px
+      bottom: 115px
+      left: 120px
+      right: 0
+      overflow-x: hidden
+      overflow-y: scroll
+      padding-right: 108px
+      &::-webkit-scrollbar
+        width: 6px
+        background: rgba(19,19,129,.5)
+      &::-webkit-scrollbar-thumb
+        background: $green
+      &-title
+        font-family: $font-suisse-semb
+        font-size: 40px
+        line-height: 44px
+        color: $grey
+        text-transform: uppercase
+        letter-spacing: 0.03em
+        span
+          color: $magenta
+      &-list
+        margin-top: 25px
+        counter-reset: item
+      &-item
+        font-family: $font-suisse-med
+        font-size: 18px
+        line-height: 28px
+        color: $grey
+        text-transform: uppercase
+        margin-bottom: 33px
+        position: relative
+        &:last-child
+          margin-bottom: 0
+        &:before
+          content: "" counter(item) "."
+          counter-increment: item
+          font-family: $font-suisse-med
+          font-size: 18px
+          line-height: 28px
+          color: $magenta
+          margin-right: 5px
+      &-info
+        font-family: $font-suisse-bold
+        color: $magenta
+        margin-top: 30px
+        font-size: 24px
+  &__reg
+    width: 750px
+    height: 530px
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    &-close
+      position: absolute
+      top: -52px
+      right: 6px
+      width: 30px
+      height: 30px
+      display: none
+      justify-content: center
+      align-items: center
+      cursor: pointer
+      &:before,
+      &:after
+        content: ""
+        width: 4px
+        height: 30px
+        background: $green
+        position: absolute
+        top: 0
+        left: 50%
+      &:before
+        transform: rotate(45deg)
+      &:after
+        transform: rotate(-45deg)
+    &-wrapper
+      position: absolute
+      z-index: -1
+      top: 50%
+      transform: translateY(-50%)
+      width: 100%
+      height: 61px
+      @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+        background: url("../img/reg/bg-center.png") no-repeat 0 0/contain
+      @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+        background: url("../img/reg/bg-center_tab.png") no-repeat 0 0/contain
+      @media screen and (max-width: 550px) and (orientation: portrait)
+        background: url("../img/reg/bg-center_mob.png") no-repeat 0 0/contain
+      @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+        background: url("../img/reg/bg-center_mob.png") no-repeat 0 0/contain
+      &::before
+        content: ''
+        position: absolute
+        z-index: -1
+        bottom: 58px
+        left: 0
+        width: 100%
+        height: 330px
+        @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+          background: url("../img/reg/bg-tb.png") no-repeat 0 0/contain
+        @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+          background: url("../img/reg/bg-tb_tab.png") no-repeat 0 0/contain
+        @media screen and (max-width: 550px) and (orientation: portrait)
+          background: url("../img/reg/bg-tb_mob.png") no-repeat 0 0/contain
+        @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+          background: url("../img/reg/bg-tb_mob.png") no-repeat 0 0/contain
+      &::after
+        content: ''
+        position: absolute
+        z-index: -1
+        top: 58px
+        left: 0
+        width: 100%
+        height: 330px
+        transform: scale(1, -1)
+        @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+          background: url("../img/reg/bg-tb.png") no-repeat 0 0/contain
+        @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+          background: url("../img/reg/bg-tb_tab.png") no-repeat 0 0/contain
+        @media screen and (max-width: 550px) and (orientation: portrait)
+          background: url("../img/reg/bg-tb_mob.png") no-repeat 0 0/contain
+        @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+          background: url("../img/reg/bg-tb_mob.png") no-repeat 0 0/contain
+    &-info
+      max-width: 288px
+    &-title
+      font-family: $font-suisse-semb
+      font-size: 40px
+      line-height: 44px
+      letter-spacing: 0.03em
+      text-transform: uppercase
+      color: $grey
+      text-align: center
+      margin: 0 0 40px 0
+    &-form
+      input
+        padding: 10px 0 8px
+        border: none
+        outline: none
+        font-family: $font-suisse-reg
+        font-size: 15px
+        line-height: 10px
+        color: $blue
+        &:focus
+          border-color: $magenta
+        &::placeholder
+          font-family: $font-suisse-reg
+          color: #A1A1A1
+          font-size: 16px
+          line-height: 21px
+      &_title
+        display: block
+        font-family: $font-suisse-reg
+        font-size: 16px
+        line-height: 20px
+        color: $grey
+        margin: 0 0 10px 0
+    &-tel
+      display: flex
+      align-items: center
+      background: #FFFFFF
+      border: 1px solid #D6D6D6
+      box-shadow: 0 0 4px rgba(107, 112, 255, 0.5)
+      border-radius: 5px
+      padding: 0 14px
+      max-height: 40px
+      margin: 0 0 25px 0
+      position: relative
+      &::after
+        content: 'Wrong phone number'
+        position: absolute
+        bottom: -23px
+        left: 0
+        font-family: $font-suisse-reg
+        font-size: 13px
+        line-height: 20px
+        color: #FF2525
+        opacity: 0
+      &._error::after
+        opacity: 1
+      &._focus
+        border-color: $magenta
+      &._done
+        border-color: $green
+        background: #FFFFFF url("../img/reg/done.svg") no-repeat
+        background-size: 13px 9px
+        background-position: 96.5% center
+      &._error
+        border-color: #FF2525
+        background: #FFFFFF url("../img/reg/error.svg") no-repeat
+        background-size: 18px 18px
+        background-position: 96.5% center
+
+      input
+        width: 68%
+        background: transparent
+
+      &_info
+        font-family: $font-suisse-reg
+        font-size: 16px
+        line-height: 21px
+        color: $blue
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 10px 0 8px
+        margin: 0 30px 0 0
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          width: 1px
+          height: 30px
+          background: #E8E8E8
+          right: -16px
+          top: 50%
+          transform: translateY(-50%)
+        img
+          margin: 0 7px 0 0
+    &-pass
+      position: relative
+      margin: 0 0 25px 0
+      &::after
+        content: 'Password is too simple'
+        position: absolute
+        bottom: -23px
+        left: 0
+        font-family: $font-suisse-reg
+        font-size: 13px
+        line-height: 20px
+        color: #FF2525
+        opacity: 0
+      &._error::after
+        opacity: 1
+      input
+        width: 100%
+        padding: 10px 16px 8px
+        background: #F9F9F9
+        border: 1px solid #A1A1A1
+        box-shadow: 0px 0px 4px rgba(107, 112, 255, 0.5)
+        border-radius: 5px
+        height: 40px
+        &._done
+          border-color: $green
+          background: #FFFFFF
+        &._error
+          border-color: #FF2525
+          background: #FFFFFF url("../img/reg/error.svg") no-repeat
+          background-size: 18px 18px
+          background-position: 96.5% center
+      &_show
+        position: absolute
+        top: 53%
+        right: 10px
+        transform: translateY(-50%)
+        padding: 0
+        margin: 0
+        border: none
+        outline: none
+        background: transparent
+        svg
+          stroke: #A1A1A1
+          transition: stroke .3s ease
+        &._active
+          svg
+            stroke: $magenta
+        &._hide
+          display: none
+
+    &-check
+      margin: 0 0 30px 0
+    &-activate,
+    &-old
+      display: flex
+      align-items: flex-start
+      margin: 0 0 15px 0
+      &_text
+        font-family: $font-suisse-reg
+        font-size: 16px
+        line-height: 20px
+        color: $grey
+        display: block
+        position: relative
+      &_label
+        display: block
+        position: relative
+        min-width: 20px
+        height: 20px
+        margin: 0 13px 0 0
+        background: #F9F9F9
+        border-radius: 2px
+        transition: .3s ease
+        opacity: 1
+        cursor: pointer
+        &::before
+          content: ''
+          position: absolute
+          min-width: 20px
+          height: 20px
+          border-radius: 2px
+          background: $magenta url("../img/reg/arr.svg") no-repeat
+          background-size: 11px 8px
+          background-position: center
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          opacity: 0
+          z-index: 2
+          transition: .3s ease
+      &_check
+        display: none
+        &:checked + .bonus__reg-activate_label::before
+          opacity: 1
+      &_link
+        color: $magenta
+        cursor: pointer
+        text-decoration: underline
+        &:hover
+          text-decoration: none
+
+    &-old
+      margin: 0
+      &_check
+        display: none
+        &:checked + .bonus__reg-old_label::before
+          opacity: 1
+    &-sign
+      font-family: $font-suisse-semb
+      color: $blue
+      padding: 23px 20px 22px
+      width: 100%
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      letter-spacing: 0.08em
+      text-transform: uppercase
+      background: $green
+      transition: background .3s ease
+      border-radius: 3.4px
+      border: none
+      outline: none
+      cursor: pointer
+      display: block
+      margin: 0 0 20px 0
+      &:hover
+        background: $green-hover
+    &-already
+      font-family: $font-suisse-reg
+      color: $grey
+      text-align: center
+      font-size: 16px
+      line-height: 28px
+    &-wrap_link
+      display: flex
+      align-items: center
+      justify-content: center
+    &-sign_link
+      display: inline-block
+      font-family: $font-suisse-reg
+      color: $magenta
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+
+  &__reg-step2
+    &_info
+      max-width: 560px
+    &_title
+      font-family: $font-suisse-semb
+      letter-spacing: 0.03em
+      text-transform: uppercase
+      font-size: 40px
+      line-height: 44px
+      color: $grey
+      text-align: center
+      margin: 0 0 20px 0
+    &_try
+      font-family: $font-suisse-reg
+      font-size: 16px
+      line-height: 24px
+      color: $grey
+      margin: 0 0 30px 0
+    &_form
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0 0 20px 0
+    &_number
+      font-family: $font-suisse-reg
+      color: $blue
+      display: block
+      outline: none
+      padding: 15px 18px 13px
+      max-width: 54px
+      font-size: 24px
+      line-height: 31px
+      background: #FFFFFF
+      border: 1px solid #D6D6D6
+      box-shadow: 0 0 4px rgba(107, 112, 255, 0.5)
+      border-radius: 5px
+      &:not(:last-child)
+        margin: 0 7px 0 0
+      &:focus
+        border: 1px solid #FF267E
+    &_text
+      font-family: $font-suisse-reg
+      color: $grey
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+      a
+        color: $magenta
+        text-decoration: underline
+        &:hover
+          text-decoration: none
+
+  &__reg-step3
+    &_img
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0 0 30px 0
+      img
+        max-width: 158px
+    &_title
+      font-family: $font-suisse-semb
+      color: $grey
+      font-size: 40px
+      line-height: 44px
+      text-align: center
+      letter-spacing: 0.03em
+      text-transform: uppercase
+      margin: 0 0 40px 0
+    &_btn
+      width: 288px
+      margin: 0 auto
+    &_link
+      font-family: $font-suisse-semb
+      display: inline-block
+      padding: 23px 20px 21px
+      text-align: center
+      width: 100%
+      text-transform: uppercase
+      background: $green
+      color: $blue
+      font-size: 18px
+      line-height: 23px
+      border-radius: 3.4px
+      transition: background .3s ease
+      &:hover
+        background: $green-hover
+
+
+
+  &__main
+    height: 100%
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: flex-end
+    &-name
+      position: absolute
+      top: 10px
+      right: 10px
+      text-align: right
+      font-family: $font-suisse-med
+      letter-spacing: 0.01em
+      z-index: 3
+      display: none
+      p
+        &:nth-child(1)
+          font-size: 11px
+          color: $grey
+        &:nth-child(2)
+          font-size: 10px
+          color: $magenta
+    &-video
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      &:before
+        content: ""
+        background: rgba(0,0,0,.1)
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+      &-bg
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &-logo
+      background: url("../img/logo.svg") no-repeat 0 0/contain
+      width: 474px
+      height: 154px
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 1
+    &-bubble
+      width: 438px
+      height: 262px
+      position: absolute
+      top: -21px
+      right: -32px
+      font-family: $font-suisse-med
+      color: $grey
+      font-size: 19px
+      line-height: 28px
+      padding: 72px 73px 0
+      letter-spacing: 0.03em
+      z-index: 3
+      @media screen and (min-width: 551px) and (min-height: 500px)
+        background: url("../img/bubble.png") no-repeat 0 0/contain
+    &-wrapper
+      position: relative
+      z-index: 2
+      transform: translateX(-17px)
+    &-txt
+      font-family: $font-suisse-bold
+      font-size: 90px
+      line-height: 98px
+      color: $grey
+      text-transform: uppercase
+      letter-spacing: 0.03em
+      max-width: 490px
+      position: absolute
+      bottom: 202px
+      left: -426px
+      span
+        color: $magenta
+      br
+        &:first-of-type
+          display: block
+        &:last-of-type
+          display: none
+    &-wheel
+      width: 857px
+      height: 910px
+      position: relative
+      flex-shrink: 0
+      &-wrap
+        position: relative
+      &-arrow
+        background: url("../img/wheel-arrow.svg") no-repeat 0 0/contain
+        width: 82px
+        height: 87px
+        top: -245px
+        z-index: 3
+      &-btn
+        width: 200px
+        height: 200px
+        z-index: 4
+        cursor: pointer
+        transform: translateY(5px)
+        @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+          background: url("../img/wheel-btn.png") no-repeat 0 0/contain
+        @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+          background: url("../img/wheel-btn.png") no-repeat 0 0/contain
+        @media screen and (max-width: 550px) and (orientation: portrait)
+          background: url("../img/wheel-btn-mob.png") no-repeat 0 0/contain
+        @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+          background: url("../img/wheel-btn-mob.png") no-repeat 0 0/contain
+      &-bulbs
+        width: 857px
+        height: 869px
+        top: -6px
+        z-index: 3
+        opacity: 0
+        transition: opacity .4s linear
+        animation: 1.8s infinite bulbs-opacity ease-in-out
+        @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+          background: url("../img/wheel-bulbs.png") no-repeat 0 0/contain
+        @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+          background: url("../img/wheel-bulbs.png") no-repeat 0 0/contain
+        @media screen and (max-width: 550px) and (orientation: portrait)
+          background: url("../img/wheel-bulbs-mob.png") no-repeat 0 0/contain
+        @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+          background: url("../img/wheel-bulbs-mob.png") no-repeat 0 0/contain
+      &-frame
+        width: 780px
+        height: 780px
+        position: relative
+        margin: auto
+        z-index: 2
+        @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+          background: url("../img/wheel-frame.png") no-repeat 0 0/contain
+        @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+          background: url("../img/wheel-frame.png") no-repeat 0 0/contain
+        @media screen and (max-width: 550px) and (orientation: portrait)
+          background: url("../img/wheel-frame-mob.png") no-repeat 0 0/contain
+        @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+          background: url("../img/wheel-frame-mob.png") no-repeat 0 0/contain
+      &-reel
+        width: 690px
+        height: 690px
+        top: 45px
+        bottom: auto
+        z-index: 2
+        @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+          background: url("../img/wheel-reel.png") no-repeat 0 0/contain
+        @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+          background: url("../img/wheel-reel.png") no-repeat 0 0/contain
+        @media screen and (max-width: 550px) and (orientation: portrait)
+          background: url("../img/wheel-reel-mob.png") no-repeat 0 0/contain
+        @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+          background: url("../img/wheel-reel-mob.png") no-repeat 0 0/contain
+      &-light
+        width: 1395px
+        height: 1395px
+        left: 50%
+        margin-left: -698px
+        top: 0
+        z-index: 1
+        animation: 1.8s infinite lamps-light ease-in-out
+        @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+          background: url("../img/wheel-light.png") no-repeat 50% 50%/contain
+        @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+          background: url("../img/wheel-light.png") no-repeat 50% 50%/contain
+        @media screen and (max-width: 550px) and (orientation: portrait)
+          background: url("../img/wheel-light-mob.png") no-repeat 50% 50%/contain
+        @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+          background: url("../img/wheel-light-mob.png") no-repeat 50% 50%/contain
+      &-bottom
+        width: 857px
+        height: 180px
+        top: auto
+        bottom: -147px
+        @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+          background: url("../img/wheel-bottom.png") no-repeat 0 0/contain
+        @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+          background: url("../img/wheel-bottom.png") no-repeat 0 0/contain
+        @media screen and (max-width: 550px) and (orientation: portrait)
+          background: url("../img/wheel-bottom-mob.png") no-repeat 0 0/contain
+        @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+          background: url("../img/wheel-bottom-mob.png") no-repeat 0 0/contain
+    &-woman
+      height: 85vh
+      position: absolute
+      bottom: -4px
+      right: -540px
+      z-index: 3
+      img
+        height: 100%
+  &__footer
+    position: absolute
+    bottom: 47px
+    left: 55px
+    right: 0
+    z-index: 4
+    display: flex
+    justify-content: flex-start
+    &-rules
+      font-family: $font-suisse-semb
+      font-size: 20px
+      color: $grey
+      text-transform: uppercase
+      letter-spacing: 0.08em
+      text-decoration: underline
+      cursor: pointer
+      &:hover
+        text-decoration: none
+  &__chip
+    position: absolute
+  .chip-1
+    width: 265px
+    height: 219px
+    bottom: 17px
+    left: 25%
+    @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+      background: url("../img/chip-1.png") no-repeat 0 0/contain
+    @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+      background: url("../img/chip-1.png") no-repeat 0 0/contain
+    @media screen and (max-width: 550px) and (orientation: portrait)
+      background: url("../img/chip-1-mob.png") no-repeat 0 0/contain
+    @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+      background: url("../img/chip-1-mob.png") no-repeat 0 0/contain
+  .chip-2
+    width: 190px
+    height: 215px
+    bottom: 53px
+    left: -41px
+    @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+      background: url("../img/chip-2.png") no-repeat 0 0/contain
+    @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+      background: url("../img/chip-2.png") no-repeat 0 0/contain
+  .chip-3
+    width: 256px
+    height: 245px
+    top: 293px
+    left: 123px
+    @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+      background: url("../img/chip-3.png") no-repeat 0 0/contain
+    @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+      background: url("../img/chip-3.png") no-repeat 0 0/contain
+    @media screen and (max-width: 550px) and (orientation: portrait)
+      background: url("../img/chip-3-mob.png") no-repeat 0 0/contain
+    @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+      background: url("../img/chip-3-mob.png") no-repeat 0 0/contain
+  .chip-4
+    width: 420px
+    height: 290px
+    top: 112px
+    left: 300px
+    @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+      background: url("../img/chip-4.png") no-repeat 0 0/contain
+    @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+      background: url("../img/chip-4.png") no-repeat 0 0/contain
+    @media screen and (max-width: 550px) and (orientation: portrait)
+      background: url("../img/chip-4-mob.png") no-repeat 0 0/contain
+    @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+      background: url("../img/chip-4-mob.png") no-repeat 0 0/contain
+  .chip-5
+    width: 243px
+    height: 236px
+    top: -53px
+    right: 398px
+    @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
+      background: url("../img/chip-5.png") no-repeat 0 0/contain
+    @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
+      background: url("../img/chip-5.png") no-repeat 0 0/contain
+    @media screen and (max-width: 550px) and (orientation: portrait)
+      background: url("../img/chip-5-mob.png") no-repeat 0 0/contain
+    @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+      background: url("../img/chip-5-mob.png") no-repeat 0 0/contain
+
+.pulse-btn
+  animation: 1.8s infinite pulse-btn ease-in-out
+
+@keyframes pulse-btn
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.11)
+  100%
+    transform: scale(1)
+
+@keyframes bulbs-opacity
+  0%
+    opacity: 0
+  50%
+    opacity: 1
+  100%
+    opacity: 0
+
+@keyframes lamps-light
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.1)
+  100%
+    transform: scale(1)
+
+.reel-rotation-first
+  animation: 6s reel-rotation-first cubic-bezier(.25,.75,.5,1.05) forwards
+
+@keyframes reel-rotation-first
+  0%
+    transform: rotate(0deg)
+  80%
+    transform: rotate(998deg)
+  90%
+    transform: rotate(986deg)
+  100%
+    transform: rotate(992deg)
+
+.reel-rotation-second
+  animation: 6s reel-rotation-second cubic-bezier(.25,.75,.5,1.05) forwards
+
+@keyframes reel-rotation-second
+  0%
+    transform: rotate(992deg)
+  80%
+    transform: rotate(1852deg)
+  90%
+    transform: rotate(1840deg)
+  100%
+    transform: rotate(1846deg)
+
+.hide
+  display: none
+
+.opacity-overlay
+  opacity: 0
+  visibility: hidden
+
+.blur
+  filter: blur(10px)
+  transition: .7s ease
+
+.show-last-popup
+  position: absolute
+  font-family: sans-serif
+  font-size: 14px
+  padding: 10px
+  border-radius: 5px
+  background: $magenta
+  color: #040414
+  bottom: -10px
+  left: 50%
+  transform: translateX(-50%)
+  z-index: 90
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer

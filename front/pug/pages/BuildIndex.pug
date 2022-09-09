@@ -1,0 +1,142 @@
+.bonus
+  .bonus__overlay.opacity-overlay
+    picture.bonus__overlay-firstWoman.hide
+      source(media="(min-width: 551px) and (orientation: landscape) and (min-height: 500px)" srcset="img/win-woman-1.png")
+      source(media="(min-width: 551px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/win-woman-1.png")
+      source(media="(max-width: 550px) and (orientation: portrait)" srcset="img/win-woman-1-mob.png")
+      source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/win-woman-1-mob.png")
+      img(src="img/win-woman-1.png" alt="Favbet")
+    picture.bonus__overlay-secondWoman.hide
+      source(media="(min-width: 551px) and (orientation: landscape) and (min-height: 500px)" srcset="img/win-woman-2.png")
+      source(media="(min-width: 551px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/win-woman-2.png")
+      source(media="(max-width: 550px) and (orientation: portrait)" srcset="img/win-woman-2-mob.png")
+      source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/win-woman-2-mob.png")
+      img(src="img/win-woman-2.png" alt="Favbet")
+    .bonus__overlay-chip.overlayChip-1.hide
+    .bonus__overlay-chip.overlayChip-2.hide
+    .bonus__overlay-chip.overlayChip-3.hide
+    .bonus__overlay-chip.overlayChip-4.hide
+    .bonus__overlay-chip.overlayChip-5.hide
+    .bonus__overlay-chip.overlayChip-6.hide
+    .bonus__overlay-chip.overlayChip-7.hide
+    .bonus__firstWin.hide
+      .bonus__firstWin-info
+        .bonus__firstWin-sum 366% #[span बोनस]
+        .bonus__firstWin-title वाह, आपने जीता है:
+        .bonus__firstWin-try 1 प्रयास शेष
+        .bonus__firstWin-btn.btn अधिक स्पिन करें
+    .bonus__secondWin.hide
+      .bonus__secondWin-info
+        .bonus__secondWin-sum 366% #[span +] 155fs
+        .bonus__secondWin-title आप असली स्टार हैं!
+        .bonus__secondWin-try रजिस्टर करें, धन राशि जमा करें और बोनस ले जाएं
+        button(type='button').bonus__secondWin-btn.btn बोनस ले जाएं
+    .bonus__rules.hide
+      .bonus__rules-close
+      .bonus__rules-txt
+        .bonus__rules-txt-title #[span 366%] बोनस + #[span 155fs] कैसे प्राप्त करें?
+        ul.bonus__rules-txt-list
+          li.bonus__rules-txt-item यदि आप अभी भी हमारे साथ रजिस्टर नहीं है, तो वेबसाइट पर रजिस्टर करें।
+          li.bonus__rules-txt-item अपने गेमिंग अकाउंट को 300 INR से टॉप-अप करें।
+          li.bonus__rules-txt-item SEVENS&FRUITS गेम (PLAYSON) में 111 मुफ्त स्पिन्स प्राप्त करें।
+          li.bonus__rules-txt-item साथ ही, अपनी जमा राशि का 25 000 INR तक का 111% बोनस आपकी प्रतीक्षा कर रहा है।
+          li.bonus__rules-txt-item यदि आप 3000 INR से धन राशि जमा करते हैं, तो आपको SEVENS&FRUITS (PLAYSON) गेम में 155 मुफ्त स्पिन्स के साथ-साथ 50 000 INR तक का 155% जमा बोनस प्राप्त होगा।
+          li.bonus__rules-txt-item बोनस को माइ अकाउंट के "जमा" सेक्शन में एक्टिवेट किया जाता है।
+          li.bonus__rules-txt-item बोनस रजिस्ट्रेशन के समय से 30 दिनों तक मान्य होता है।
+          li.bonus__rules-txt-item बोनस को दांव पर लगाने के लिए, आपको बोनस राशि का 35 गुना दांव पर लगाने की आवश्यकता होती है।
+          li.bonus__rules-txt-item X35 दांव बोनस राशि और बोनस स्पिन्स दोनों के लिए जमा की जाती है।
+        .bonus__rules-txt-info शुभकामनाएं!
+    .bonus__reg.hide
+      .bonus__reg-close
+      .bonus__reg-wrapper.bonus__reg-wrapper_mob
+      .bonus__reg-info
+        .bonus__reg-title Registration
+        form(action='#' class="bonus__reg-form")
+          label.bonus__reg-form_title Your mobile number
+          .bonus__reg-tel
+            .bonus__reg-tel_info
+              img(src='img/reg/india.jpg' alt="india")
+              span +91
+            input(type='tel' id="tel" name="tel" class="input-tel" data-phone-pattern = "(____)___-___" placeholder="(____)___-___" pattern="\(\d{3}\) \d{3}\-\d{3}")
+          label.bonus__reg-form_title Your password
+          .bonus__reg-pass
+            input(type="password" name="password" id="password" class="input-pass" placeholder='Enter the password')
+            button(type="button" aria-label="pass-show" class="bonus__reg-pass_show")
+              svg(width="20" height="14")
+                use(href="img/reg/eye.svg#eye")
+          .bonus__reg-check
+            .bonus__reg-activate
+              input(type="checkbox" id="activate" name='activate' class="bonus__reg-activate_check")
+              label(for="activate" class='bonus__reg-activate_label')
+              .bonus__reg-activate_text Activate deposit bonus. <span class="bonus__reg-activate_link ">(How to receive bonus)</span>
+            .bonus__reg-old
+              input(type="checkbox" id="old" name='old' class="bonus__reg-old_check")
+              label(for="old" class='bonus__reg-old_label')
+              .bonus__reg-old_text I am 18 years old and I agree with <a href="#" class="bonus__reg-old_link">Terms and conditions</a>
+
+          button(type="button" class='bonus__reg-sign') SIGN UP
+          .bonus__reg-already Already have an account?
+          .bonus__reg-wrap_link
+            a(href="#" class="bonus__reg-sign_link") Sign in
+    .bonus__reg.bonus__reg-step2.hide
+      .bonus__reg-close.bonus__reg-step2-close
+      .bonus__reg-wrapper.bonus__reg-step2-wrapper
+      .bonus__reg-step2_info
+        .bonus__reg-step2_title enter verification code
+        .bonus__reg-step2_try We have sent a temporary verification code to a phone number ending in 74. Enter the code to continue.
+        form(action='#').bonus__reg-step2_form
+          input(type='tel' maxlength="1" pattern="[0-9]").bonus__reg-step2_number
+          input(type='tel' maxlength="1" pattern="[0-9]").bonus__reg-step2_number
+          input(type='tel' maxlength="1" pattern="[0-9]").bonus__reg-step2_number
+          input(type='tel' maxlength="1" pattern="[0-9]").bonus__reg-step2_number
+          input(type='tel' maxlength="1" pattern="[0-9]").bonus__reg-step2_number
+        .bonus__reg-step2_text Didn't receive a code? <a href="#">Try again!</a>
+        .show-last-popup show next
+    .bonus__reg.bonus__reg-step3.hide
+            .bonus__reg-close.bonus__reg-step3-close
+            .bonus__reg-wrapper.bonus__reg-step3-wrapper
+            .bonus__reg-step3_info
+              .bonus__reg-step3_img
+                img(src='img/reg/finaly.png' alt='done')
+              .bonus__reg-step3_title Hooray! #[br] I am registered
+              .bonus__reg-step3_btn
+                a(href="#").bonus__reg-step3_link Get a bonus!
+
+  .bonus__main
+    .bonus__main-name
+      p Deepika Padukone
+      p actress
+    .bonus__main-logo
+    .bonus__main-bubble.
+      नमस्कार। मैं दीपिका पादुकोन हूं।#[br]
+      क्या आप खेलना चाहते हैं? व्हील स्पिन करें - आपके पास दो मौके हैं। शुभकामनाएं!
+    .bonus__main-wrapper
+      .bonus__main-txt spin#[br] and#[br] #[span win] #[span bonuses]
+      .bonus__main-wheel
+        .bonus__main-wheel-wrap
+          .bonus__main-wheel-arrow.position
+          .bonus__main-wheel-btn.position.pulse-btn
+          .bonus__main-wheel-bulbs.position
+          .bonus__main-wheel-frame
+          .bonus__main-wheel-reel.position
+          .bonus__main-wheel-light.position
+          .bonus__main-wheel-bottom.position
+      picture.bonus__main-woman
+        source(media="(min-width: 551px) and (orientation: landscape) and (min-height: 500px)" srcset="img/woman-main.png")
+        source(media="(min-width: 551px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/woman-main.png")
+        source(media="(max-width: 550px) and (orientation: portrait)" srcset="img/woman-main-mob.png")
+        source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/woman-main-mob.png")
+        img(src="img/woman-main.png" alt="Favbet")
+    .bonus__main-video
+      video(muted loop autoplay).bonus__main-video-bg
+    .bonus__footer
+      .bonus__footer-rules How to receive a bonus
+  .bonus__chip.chip-1
+  .bonus__chip.chip-2
+  .bonus__chip.chip-3
+  .bonus__chip.chip-4
+  .bonus__chip.chip-5
+  audio(src='sounds/main.mp3' class='main-audio' loop)
+  audio(src='sounds/wheel.mp3' class="wheel-audio")
+  audio(src='sounds/popup.mp3' class="popup-audio")
+  audio(src='sounds/click.mp3' class="click-audio")
